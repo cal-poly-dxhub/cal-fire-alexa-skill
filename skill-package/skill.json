@@ -1,0 +1,50 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:REGION:ACCOUNT:function:ask-skill-calfire-proactive"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:address:full:read"
+      },
+      {
+        "name": "alexa::devices:all:geolocation:read"
+      },
+      {
+        "name": "alexa::devices:all:notifications:write"
+      }
+    ],
+    "events": {
+      "subscriptions": [
+        {
+          "eventName": "SKILL_PERMISSION_CHANGED"
+        }
+      ],
+      "endpoint": {
+        "uri": "arn:aws:lambda:REGION:ACCOUNT:function:ask-skill-calfire-proactive"
+      }
+    },
+    "publishingInformation": {
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-US": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "name": "skill-calfire-proactive-notifications",
+          "summary": "Sample Short Description"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}

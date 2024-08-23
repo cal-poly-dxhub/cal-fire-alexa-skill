@@ -1,0 +1,21 @@
+{
+    "topic": {
+        "topicId": "ProductDeals",
+        "view": {
+            "parameters": {
+                "en-US": {
+                    "title": "Product Deals in the USA",
+                    "description": "Product Deals in the USA from the Product"
+                },
+                "en": {
+                    "title": "Product Deals",
+                    "description": "Product Deals from the Product Deals update Skill"
+                },
+                "und": {
+                    "title": "Notifications from Proactive Agent",
+                    "description": "Proactive Agent can send notification as result of Notify action on a trigger condition"
+                }
+            }
+        }
+    }
+}

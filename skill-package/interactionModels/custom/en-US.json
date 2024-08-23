@@ -1,0 +1,93 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent", "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "LearnMoreIntent",
+          "samples": [
+            "how can I learn about wildfires",
+            "how can I prepare for a wildfire",
+            "how can I learn more about wildfire preparedness",
+            "where I can learn more about wildfire preparedness"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "PreparednessWeekIntent",
+          "samples": [
+            "when is wildfire preparedness week",
+            "what day is wildfire week",
+            "how long until prep week",
+            "what is the date of wildfire preparedness week"
+          ]
+        },
+        {
+            "slots": [
+                {
+                    "name": "fireName",
+                    "type": "AMAZON.SearchQuery"
+                }
+            ],
+            "name": "HowCloseIntent",
+            "samples": [
+                "how close is the {fireName} fire to me",
+                "how far away is the {fireName} fire"
+            ]
+        },
+        {
+          "slots": [],
+          "name": "FireNearMeIntent",
+          "samples": [
+            "is there a fire near me",
+            "are there any fires in my area"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "area",
+              "type": "AMAZON.Region"
+            }
+          ],
+          "name": "FireNearXIntent",
+          "samples": [
+            "does {area} have any fires",
+            "how many fires are there near {area}",
+            "are there any fires near {area}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "california fire now"
+    }
+  }
+}
